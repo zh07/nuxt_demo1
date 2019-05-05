@@ -21,6 +21,7 @@
         >GitHub</a>
       </div>
       <nuxt-link to="/about">jump to aobut</nuxt-link>
+      <nuxt-link to="/index2">jump to index2</nuxt-link>
     </div>
   </section>
 </template>

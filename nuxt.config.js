@@ -1,7 +1,14 @@
 import pkg from './package'
+import namedView from './assets/namedView'
 
 export default {
   mode: 'spa',
+
+  router: {
+    extendRoutes(routes, resolve) {
+      namedView(routes, resolve, resolve(__dirname))
+    }
+  },
 
   /*
   ** Headers of the page
@@ -35,7 +42,7 @@ export default {
   plugins: [
     {src: '~/plugins/vue-notifications.js', mode: 'client'},
     '~/plugins/vue-inject.js',
-    {src: '~/plugins/ctx-inject.js', mode: 'server'},
+    '~/plugins/ctx-inject.js',
     '~/plugins/combined-inject.js'
   ],
 

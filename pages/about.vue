@@ -1,7 +1,12 @@
 <template>
   <div>
-    <span>222222222</span>
-    <nuxt-link to="ctx-example-cimponent">查看ject同时注入</nuxt-link>
+    <div>222222222</div>
+    <div>
+      <nuxt-link to="/todos">jump to todos</nuxt-link>
+    </div>
+    <div>
+      <nuxt-link to="/ctx-example-cimponent">jump to cimponent</nuxt-link>
+    </div>
   </div>
 </template>
 
